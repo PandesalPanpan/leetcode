@@ -4,7 +4,8 @@
   "description": "This repository contains my solutions to various LeetCode problems. Each solution is organized by problem number and includes code, explanations, and relevant comments.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch */.js"
   },
   "author": "",
   "license": "ISC",
