@@ -1,0 +1,17 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "This repository contains my solutions to various LeetCode problems. Each solution is organized by problem number and includes code, explanations, and relevant comments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
