@@ -13,9 +13,10 @@ it('Case 1', () => {
 
 })
 
-/* it('Case 2', () => {
+
+it('Case 2', () => {
     const input = ["a"]
     const expected = ["a"]
     expect(compress(input)).toBe(expected.length);
     expect(input).toEqual(expected);
-}) */
+})
