@@ -20,3 +20,10 @@ it('Case 2', () => {
     expect(compress(input)).toBe(expected.length);
     expect(input).toEqual(expected);
 })
+
+it('Case 3', () => {
+    const input = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
+    const expected = ["a","b","1","2"];
+    expect(compress(input)).toBe(expected.length);
+    expect(input).toEqual(expected);
+})
