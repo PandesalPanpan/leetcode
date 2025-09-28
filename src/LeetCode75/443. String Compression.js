@@ -2,19 +2,19 @@
  * @param {character[]} chars
  * @return {number}
  */
-var compress = function(chars) {
+var compress = function (chars) {
 
-    const temp = [];
+    let temp = [];
     let currentLetter = chars[0];
     let count = 0;
     chars.forEach(char => {
         if (char !== currentLetter) {
             temp.push(currentLetter);
             if (count !== 1) {
-                temp.push(count.toString());            
+                temp.push(count.toString());
             }
             currentLetter = char;
-            count = 1;   
+            count = 1;
         } else {
             count++;
         }
@@ -23,22 +23,25 @@ var compress = function(chars) {
     if (count !== 1) {
         temp.push(count.toString());
     }
-    
+
 
     // Clean up the chars
     while (chars.length > 0) {
         chars.pop();
     }
-
+    temp = splitSingle(temp)
     temp.forEach((element) => {
         chars.push(element);
     })
-    
+
 
     return chars.length;
 };
 
-const input = ["a", "a", "b", "b", "c", "c", "c"];
-compress(input);
+const splitSingle = (array) => {
+    const combined = array.join('');
+    const separate = combined.split('');
+    return separate;
+}
 
 module.exports = compress;
